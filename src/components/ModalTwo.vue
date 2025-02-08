@@ -17,8 +17,8 @@
             </div>
           </Form>
         </div>
-     </template>
-    <template #footer></template>
+      </template>
+      <template #footer></template>
     </Modal>
   </div>
 </template>
@@ -33,12 +33,11 @@ defineProps({
 });
 
 const emit = defineEmits(["update:modelValue"]);
-
 const loading = ref(false);
 const formState = reactive({
   name: "",
   email: "",
-}); 
+});
 
 const handleSubmit = () => {
   loading.value = true;
@@ -49,12 +48,10 @@ const handleSubmit = () => {
   }, 2000);
 };
 </script>
-
 <style>
 .ant-modal .ant-modal-content {
   padding: 0;
 }
-
 .ant-modal-footer {
   padding: 15px;
 }
