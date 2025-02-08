@@ -17,11 +17,8 @@
             </div>
           </Form>
         </div>
-
-      </template>
-
-
-      <template #footer></template>
+     </template>
+    <template #footer></template>
     </Modal>
   </div>
 </template>
@@ -41,7 +38,7 @@ const loading = ref(false);
 const formState = reactive({
   name: "",
   email: "",
-});
+}); 
 
 const handleSubmit = () => {
   loading.value = true;

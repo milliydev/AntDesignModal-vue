@@ -11,7 +11,6 @@
 import { ref } from "vue";
 import Modal from "./components/Modal.vue";
 import ModalTwo from "./components/ModalTwo.vue";
-
 const isFirstModalOpen = ref(false);
 const isSecondModalOpen = ref(false);
 </script>

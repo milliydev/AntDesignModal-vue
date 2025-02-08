@@ -1,16 +1,13 @@
 <template>
     <div>
         <Button type="primary" @click="$emit('update:modelValue', true)">Modal</Button>
-        <Modal 
-            :visible="modelValue" 
-            :bodyStyle="{ height: '400px' }" 
-            :closable="false"
-            @cancel="$emit('update:modelValue', false)"
-        >
+        <Modal :visible="modelValue" :bodyStyle="{ height: '400px' }" :closable="false"
+            @cancel="$emit('update:modelValue', false)">
             <template #title>
                 <div class="flex items-center justify-between bg-[#80C8F5] rounded-md p-3 text-white text-lg">
                     <span>{{ HeaderTitle }}</span>
-                    <Button type="text" class="text-dark bg-white cursor-pointer" @click="$emit('update:modelValue', false)">
+                    <Button type="text" class="text-dark bg-white cursor-pointer"
+                        @click="$emit('update:modelValue', false)">
                         Close
                     </Button>
                 </div>
@@ -39,7 +36,7 @@ import { defineProps, defineEmits } from 'vue'
 import { Button, Modal } from 'ant-design-vue'
 
 defineProps({
-    modelValue: Boolean, 
+    modelValue: Boolean,
     HeaderTitle: String
 });
 
